@@ -29,7 +29,7 @@
 <h2>📊 Exploratory Data Analysis (EDA)</h2>
 <ol>
   <li><strong>Correlation Heatmap</strong> - Shows relationships between numeric features.</li>
-  <li><strong>Scatter Plot</strong> - carat vs clarity.</li>
+  <li><strong>Scatter Plot</strong> - carat vs price.</li>
   <li><strong>Line Plot</strong> - Average price over carat.</li>
 </ol>
 
@@ -88,7 +88,7 @@ The price of the Diamond would be: 612.45
 <h2>🖼️ Sample Plots</h2>
 <ul>
   <li>Correlation Heatmap</li>
-  <li>Carat vs Clarity Scatter</li>
+  <li>Carat vs Price Scatter</li>
   <li>Carat vs Price Lineplot</li>
   <li>Actual vs Predicted Prices Scatter Plot</li>
 </ul>
@@ -98,7 +98,7 @@ The price of the Diamond would be: 612.45
   <li>Clone this repository.</li>
   <li>Place <code>diamonds.csv</code> in the root directory.</li>
   <li>Run the script:
-    <pre><code>python3 diamond_price_prediction.py</code></pre>
+    <pre><code>streamlit run app.py</code></pre>
   </li>
 </ol>
 
@@ -106,7 +106,7 @@ The price of the Diamond would be: 612.45
 <ul>
   <li>Include more features like cut, clarity, color, x, y, z</li>
   <li>Try advanced models (Random Forest, XGBoost)</li>
-  <li>Build a web UI for real-time predictions</li>
+  <li>Build a web UI for real-time predictions ✅</li>
 </ul>
 
 <h2>📬 Contact</h2>
