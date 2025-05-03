@@ -6,6 +6,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import joblib
 
 #to suppress warnings generated 
 def warn(*args, **kwargs):
@@ -26,7 +27,8 @@ plt.title("Correlation Heatmap")
 plt.show()
 
 # 4. Scatter and Line plots
-data.plot.scatter(x="carat", y="clarity")
+data.plot.scatter(x="carat", y="price")
+plt.title("Scatter Plot")
 plt.show()
 
 sns.lineplot(x="carat", y="price", data=data, estimator='mean', ci=None)
@@ -89,3 +91,6 @@ plt.ylabel('Predicted Price')
 plt.title('Actual vs Predicted Prices')
 plt.grid(True)
 plt.show()
+
+joblib.dump(lr,"model.pkl")
+features.columns
